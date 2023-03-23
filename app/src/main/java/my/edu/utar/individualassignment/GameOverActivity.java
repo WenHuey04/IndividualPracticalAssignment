@@ -104,7 +104,8 @@ public class GameOverActivity extends AppCompatActivity {
         if (isGreater) {
             reclevels.add(level2);
             Collections.sort(reclevels, Collections.reverseOrder()); // sort the numbers
-            ArrayList<Integer> top25 = new ArrayList<Integer>(reclevels.subList(0, Math.min(25, reclevels.size()))); // 获取前25个数字
+            //get the first 25 num
+            ArrayList<Integer> top25 = new ArrayList<Integer>(reclevels.subList(0, Math.min(25, reclevels.size()))); 
             writeFile("records.txt", top25);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
