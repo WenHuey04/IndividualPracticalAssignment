@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/star"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity = "right">
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="||"
+            android:background="#00000000"
+            android:textColor = "#F45A8E"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="100dp">
+     <LinearLayout
+         android:layout_width="1dp"
+         android:gravity="bottom"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_weight="1">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textColor="#F45A8E"
+             android:text="Level"
+             android:textSize="25dp"
+             android:textStyle="bold"
+             android:padding="5dp"
+             android:textAllCaps="true"/>
+         <TextView
+             android:id="@+id/textLevel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textColor="#FFFFFF"
+             android:text="1"
+             android:textSize="20dp"
+             android:textStyle="bold"
+             android:padding="5dp"
+             android:textAllCaps="true"/>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="1dp"
+         android:gravity="center"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_weight="1">
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_centerInParent="true"
+             android:src="@drawable/artist"/>
+     </LinearLayout>
+
+
+
+     <LinearLayout
+         android:layout_width="1dp"
+         android:gravity="bottom"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_weight="1">
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textColor="#F45A8E"
+             android:text="Time"
+             android:textSize="25dp"
+             android:textStyle="bold"
+             android:padding="5dp"
+             android:textAllCaps="true"/>
+         <TextView
+             android:id="@+id/textTimer"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textColor="#FFFFFF"
+             android:text="1"
+             android:textSize="20dp"
+             android:textStyle="bold"
+             android:padding="5dp"
+             android:textAllCaps="true"/>
+     </LinearLayout>
+
+ </LinearLayout>
+    <GridView
+        android:id="@+id/gdvLisObj1"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

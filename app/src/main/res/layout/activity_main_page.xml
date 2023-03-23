@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/star"
+android:gravity="center"
+tools:context=".MainPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgCongra"
+            android:src="@drawable/colorwheel"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ED3573"
+        android:text="Tap Different Color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:onClick="startGame"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background = "#673AB7"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="start"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:onClick="leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background = "#673AB7"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Leaderboard"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:onClick="exitGame"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background = "#673AB7"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Exit"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textAllCaps="true"/>
+
+</LinearLayout>
